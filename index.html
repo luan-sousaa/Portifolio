@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de DevOps Engineer - Cloud, Automation, Containers">
+    <meta name="theme-color" content="#1e70c1">
+    <title>DevOps Engineer - Portfólio Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SVG Filter for Advanced Glass Effects -->
+    <svg width="0" height="0">
+        <defs>
+            <filter id="switcher">
+                <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Brand Name - Outside Navbar -->
+    <div class="brand-header">
+        <h1 class="brand-title">Luan Sousa</h1>
+    </div>
+
+    <!-- Theme Switcher - Premium Liquid Glass Navbar -->
+    <fieldset class="switcher">
+        <legend class="switcher__legend">Tema</legend>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+        
+        <!-- Theme Options -->
+        <label class="switcher__option">
+            <input type="radio" name="theme" value="light" c-option="1" class="switcher__input" />
+            <svg class="switcher__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </label>
+
+        <label class="switcher__option">
+            <input type="radio" name="theme" value="dark" c-option="2" class="switcher__input" checked />
+            <svg class="switcher__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </label>
+    </fieldset>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-card glass-effect">
+                    <h2 class="hero-title">DevOps Engineer</h2>
+                    <p class="hero-subtitle">Criador de Soluções Digitais | APIs, Automação, Sites e Cloud para Pequenos Negócios</p>
+                    <p class="hero-description">
+                        Sou Luan Bispo — desenvolvo sites, sistemas e automações, além de configurar infraestrutura em cloud com foco em performance e segurança. Meu objetivo é ajudar empresas a trabalhar melhor por meio de tecnologia simples e eficiente.
+                    </p>
+                    <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        Ver Projetos
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-circle glass-effect">
+                    <img src="luan-sousa.jpg" alt="Foto de perfil" class="profile-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECH STACK ===== -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="section-container">
+            <h2 class="section-title">Tech Stack</h2>
+            <p class="section-subtitle">Tecnologias e ferramentas que domino</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">🐳</div>
+                    <h3>Docker</h3>
+                    <p>Containerização e orquestração</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">☸️</div>
+                    <h3>Kubernetes</h3>
+                    <p>Orquestração em escala</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">☁️</div>
+                    <h3>AWS</h3>
+                    <p>Cloud infraestrutura</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">🔄</div>
+                    <h3>CI/CD</h3>
+                    <p>Pipelines automatizados</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">🏗️</div>
+                    <h3>Terraform</h3>
+                    <p>Infrastructure as Code</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Administração de sistemas</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Scripting e automação</p>
+                </div>
+                <div class="tech-card glass-effect">
+                    <div class="tech-icon">📊</div>
+                    <h3>Monitoring</h3>
+                    <p>Prometheus, Grafana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <p class="section-subtitle">Soluções desenvolvidas com excelência técnica</p>
+            
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card glass-effect">
+                    <div class="project-header">
+                        <h3>Pipeline CI/CD Automatizado</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-problem">
+                            <strong>Desafio:</strong> Reduzir tempo de deploy de 2h para minutos
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solução:</strong> Implementei pipeline com GitHub Actions, Docker e Kubernetes
+                        </p>
+                        <div class="project-diagram">
+                            <svg viewBox="0 0 300 100" class="diagram-svg">
+                                <rect x="10" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="5"/>
+                                <text x="35" y="55" text-anchor="middle" font-size="11">Push</text>
+                                
+                                <path d="M 65 50 L 85 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
+                                
+                                <rect x="85" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="5"/>
+                                <text x="110" y="55" text-anchor="middle" font-size="11">Build</text>
+                                
+                                <path d="M 140 50 L 160 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
+                                
+                                <rect x="160" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="5"/>
+                                <text x="185" y="55" text-anchor="middle" font-size="11">Test</text>
+                                
+                                <path d="M 215 50 L 235 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
+                                
+                                <rect x="235" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="5"/>
+                                <text x="260" y="55" text-anchor="middle" font-size="11">Deploy</text>
+                                
+                                <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
+                                    </marker>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card glass-effect">
+                    <div class="project-header">
+                        <h3>Infraestrutura em Nuvem (AWS)</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-problem">
+                            <strong>Desafio:</strong> Migrar aplicação on-premise para nuvem
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solução:</strong> Arquitetura multi-AZ com Auto Scaling e RDS
+                        </p>
+                        <div class="project-diagram">
+                            <svg viewBox="0 0 300 100" class="diagram-svg">
+                                <rect x="20" y="20" width="260" height="60" fill="none" stroke="currentColor" stroke-dasharray="5,5" rx="5"/>
+                                <text x="150" y="35" text-anchor="middle" font-size="10" opacity="0.6">VPC</text>
+                                
+                                <rect x="30" y="45" width="50" height="30" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="55" y="63" text-anchor="middle" font-size="9">EC2</text>
+                                
+                                <rect x="95" y="45" width="50" height="30" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="120" y="63" text-anchor="middle" font-size="9">EC2</text>
+                                
+                                <rect x="160" y="45" width="50" height="30" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="185" y="63" text-anchor="middle" font-size="9">RDS</text>
+                                
+                                <rect x="225" y="45" width="40" height="30" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="245" y="63" text-anchor="middle" font-size="9">S3</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Auto Scaling</span>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card glass-effect">
+                    <div class="project-header">
+                        <h3>Monitoramento e Logging</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-problem">
+                            <strong>Desafio:</strong> Falta de visibilidade da infraestrutura
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solução:</strong> Stack ELK + Prometheus + Grafana
+                        </p>
+                        <div class="project-diagram">
+                            <svg viewBox="0 0 300 100" class="diagram-svg">
+                                <rect x="20" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="45" y="55" text-anchor="middle" font-size="9">Apps</text>
+                                
+                                <path d="M 75 50 L 95 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                                
+                                <rect x="95" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="120" y="55" text-anchor="middle" font-size="9">Collect</text>
+                                
+                                <path d="M 150 50 L 170 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                                
+                                <rect x="170" y="30" width="50" height="40" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="195" y="55" text-anchor="middle" font-size="9">Process</text>
+                                
+                                <path d="M 225 50 L 245 50" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead2)"/>
+                                
+                                <rect x="245" y="30" width="40" height="40" fill="none" stroke="currentColor" rx="3"/>
+                                <text x="265" y="55" text-anchor="middle" font-size="8">Visual</text>
+                                
+                                <defs>
+                                    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
+                                    </marker>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">ELK Stack</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="project-card glass-effect">
+                    <div class="project-header">
+                        <h3>Orquestração com Kubernetes</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-problem">
+                            <strong>Desafio:</strong> Gerenciar múltiplos containers em produção
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solução:</strong> Cluster K8s com Helm, GitOps e auto-scaling
+                        </p>
+                        <div class="project-diagram">
+                            <svg viewBox="0 0 300 100" class="diagram-svg">
+                                <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="8" fill="currentColor" opacity="0.6"/>
+                                <text x="50" y="70" text-anchor="middle" font-size="9">Master</text>
+                                
+                                <circle cx="130" cy="30" r="15" fill="none" stroke="currentColor"/>
+                                <text x="130" y="50" text-anchor="middle" font-size="8">Node 1</text>
+                                
+                                <circle cx="130" cy="70" r="15" fill="none" stroke="currentColor"/>
+                                <text x="130" y="90" text-anchor="middle" font-size="8">Node 2</text>
+                                
+                                <circle cx="210" cy="30" r="15" fill="none" stroke="currentColor"/>
+                                <text x="210" y="50" text-anchor="middle" font-size="8">Node 3</text>
+                                
+                                <circle cx="210" cy="70" r="15" fill="none" stroke="currentColor"/>
+                                <text x="210" y="90" text-anchor="middle" font-size="8">Node 4</text>
+                                
+                                <path d="M 65 50 L 115 35" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <path d="M 65 50 L 115 65" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <path d="M 65 50 L 195 35" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <path d="M 65 50 L 195 65" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Helm</span>
+                        <span class="tag">GitOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ARQUITETURA E PIPELINES ===== -->
+    <section id="architecture" class="architecture">
+        <div class="section-container">
+            <h2 class="section-title">Arquitetura & Pipelines</h2>
+            <p class="section-subtitle">Fluxos de trabalho e sistemas que construí</p>
+            
+            <div class="architecture-grid">
+                <!-- CI/CD Pipeline -->
+                <div class="architecture-card glass-effect">
+                    <h3>Pipeline CI/CD Completo</h3>
+                    <svg viewBox="0 0 400 200" class="architecture-diagram">
+                        <!-- Developer -->
+                        <circle cx="40" cy="40" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="40" y="45" text-anchor="middle" font-size="10">👨‍💻</text>
+                        <text x="40" y="70" text-anchor="middle" font-size="9">Dev</text>
+
+                        <!-- Git -->
+                        <rect x="100" y="25" width="50" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="125" y="45" text-anchor="middle" font-size="9">GitHub</text>
+
+                        <!-- Build -->
+                        <rect x="180" y="25" width="50" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="205" y="45" text-anchor="middle" font-size="9">Build</text>
+
+                        <!-- Test -->
+                        <rect x="260" y="25" width="50" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="285" y="45" text-anchor="middle" font-size="9">Test</text>
+
+                        <!-- Registry -->
+                        <rect x="340" y="25" width="50" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="365" y="45" text-anchor="middle" font-size="8">Registry</text>
+
+                        <!-- Staging -->
+                        <rect x="100" y="100" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="130" y="120" text-anchor="middle" font-size="9">Staging</text>
+                        <text x="130" y="135" text-anchor="middle" font-size="8">K8s</text>
+
+                        <!-- Tests E2E -->
+                        <rect x="200" y="100" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="230" y="120" text-anchor="middle" font-size="9">Tests</text>
+                        <text x="230" y="135" text-anchor="middle" font-size="8">E2E</text>
+
+                        <!-- Production -->
+                        <rect x="300" y="100" width="60" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="330" y="120" text-anchor="middle" font-size="9">Prod</text>
+                        <text x="330" y="135" text-anchor="middle" font-size="8">AWS</text>
+
+                        <!-- Arrows -->
+                        <path d="M 55 40 L 100 40" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        <path d="M 150 40 L 180 40" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        <path d="M 230 40 L 260 40" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        <path d="M 310 40 L 340 40" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        
+                        <path d="M 130 70 L 130 100" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        <path d="M 205 55 L 230 100" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+                        <path d="M 285 55 L 330 100" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+
+                        <!-- Monitoring -->
+                        <circle cx="200" cy="170" r="20" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3"/>
+                        <text x="200" y="175" text-anchor="middle" font-size="9">Monitor</text>
+
+                        <path d="M 130 140 L 190 155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3"/>
+                        <path d="M 230 140 L 210 155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3"/>
+                        <path d="M 330 140 L 220 160" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3"/>
+
+                        <defs>
+                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+
+                <!-- Microservices -->
+                <div class="architecture-card glass-effect">
+                    <h3>Arquitetura de Microserviços</h3>
+                    <svg viewBox="0 0 400 200" class="architecture-diagram">
+                        <!-- API Gateway -->
+                        <rect x="160" y="10" width="80" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="200" y="32" text-anchor="middle" font-size="10">API Gateway</text>
+
+                        <!-- Services -->
+                        <rect x="30" y="80" width="70" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="65" y="105" text-anchor="middle" font-size="9">Auth</text>
+                        <text x="65" y="120" text-anchor="middle" font-size="7">Service</text>
+
+                        <rect x="125" y="80" width="70" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="160" y="105" text-anchor="middle" font-size="9">User</text>
+                        <text x="160" y="120" text-anchor="middle" font-size="7">Service</text>
+
+                        <rect x="220" y="80" width="70" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="255" y="105" text-anchor="middle" font-size="9">Data</text>
+                        <text x="255" y="120" text-anchor="middle" font-size="7">Service</text>
+
+                        <rect x="315" y="80" width="70" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="350" y="105" text-anchor="middle" font-size="9">Cache</text>
+                        <text x="350" y="120" text-anchor="middle" font-size="7">Service</text>
+
+                        <!-- Databases -->
+                        <circle cx="65" cy="160" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="65" y="165" text-anchor="middle" font-size="8">DB</text>
+
+                        <circle cx="160" cy="160" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="160" y="165" text-anchor="middle" font-size="8">DB</text>
+
+                        <circle cx="255" cy="160" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="255" y="165" text-anchor="middle" font-size="8">DB</text>
+
+                        <circle cx="350" cy="160" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="350" y="165" text-anchor="middle" font-size="8">Cache</text>
+
+                        <!-- Connections -->
+                        <path d="M 180 45 L 65 80" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 200 45 L 160 80" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 220 45 L 255 80" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 240 45 L 350 80" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+
+                        <path d="M 65 120 L 65 145" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 160 120 L 160 145" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 255 120 L 255 145" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 350 120 L 350 145" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                    </svg>
+                </div>
+
+                <!-- Infrastructure AWS -->
+                <div class="architecture-card glass-effect">
+                    <h3>Infraestrutura AWS</h3>
+                    <svg viewBox="0 0 400 200" class="architecture-diagram">
+                        <!-- Route 53 -->
+                        <rect x="150" y="10" width="100" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="200" y="30" text-anchor="middle" font-size="10">Route 53 (DNS)</text>
+
+                        <!-- CloudFront -->
+                        <rect x="150" y="55" width="100" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="200" y="75" text-anchor="middle" font-size="10">CloudFront</text>
+
+                        <!-- ALB -->
+                        <rect x="150" y="100" width="100" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="200" y="120" text-anchor="middle" font-size="10">ALB</text>
+
+                        <!-- ECS Cluster -->
+                        <rect x="40" y="150" width="90" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="85" y="165" text-anchor="middle" font-size="9">ECS</text>
+                        <text x="85" y="180" text-anchor="middle" font-size="8">Cluster</text>
+
+                        <!-- RDS -->
+                        <rect x="155" y="150" width="90" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="200" y="165" text-anchor="middle" font-size="9">RDS</text>
+                        <text x="200" y="180" text-anchor="middle" font-size="8">Database</text>
+
+                        <!-- S3 -->
+                        <rect x="270" y="150" width="90" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="315" y="165" text-anchor="middle" font-size="9">S3</text>
+                        <text x="315" y="180" text-anchor="middle" font-size="8">Storage</text>
+
+                        <!-- Arrows -->
+                        <path d="M 200 40 L 200 55" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)"/>
+                        <path d="M 200 85 L 200 100" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)"/>
+                        
+                        <path d="M 180 130 L 85 150" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)"/>
+                        <path d="M 200 130 L 200 150" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)"/>
+                        <path d="M 220 130 L 315 150" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)"/>
+
+                        <defs>
+                            <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+
+                <!-- Observability -->
+                <div class="architecture-card glass-effect">
+                    <h3>Stack de Observabilidade</h3>
+                    <svg viewBox="0 0 400 200" class="architecture-diagram">
+                        <!-- Applications -->
+                        <rect x="30" y="20" width="70" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="65" y="42" text-anchor="middle" font-size="9">Apps</text>
+
+                        <!-- Metrics -->
+                        <rect x="125" y="20" width="70" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="160" y="42" text-anchor="middle" font-size="9">Prometheus</text>
+
+                        <!-- Logs -->
+                        <rect x="220" y="20" width="70" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="255" y="42" text-anchor="middle" font-size="9">ELK</text>
+
+                        <!-- Traces -->
+                        <rect x="315" y="20" width="70" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="350" y="42" text-anchor="middle" font-size="9">Jaeger</text>
+
+                        <!-- Central Database -->
+                        <rect x="80" y="100" width="240" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+                        <text x="200" y="120" text-anchor="middle" font-size="9">Time Series DB / Data Lake</text>
+
+                        <!-- Alerting -->
+                        <rect x="80" y="160" width="80" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="120" y="180" text-anchor="middle" font-size="9">Alerting</text>
+
+                        <!-- Visualization -->
+                        <rect x="190" y="160" width="80" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <text x="230" y="180" text-anchor="middle" font-size="9">Grafana</text>
+
+                        <!-- Connections -->
+                        <path d="M 65 55 L 160 55" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M 160 55 L 255 55" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M 255 55 L 350 55" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+
+                        <path d="M 160 55 L 200 100" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M 255 55 L 200 100" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M 350 55 L 200 100" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+
+                        <path d="M 150 140 L 120 160" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                        <path d="M 200 140 L 230 160" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">Sobre Mim</h2>
+            
+            <div class="about-content glass-effect">
+                <div class="about-text">
+                    <h3>Especialista em Infraestrutura Moderna</h3>
+                    <p>
+                        Sou DevOps Engineer apaixonado por criar soluções escaláveis, confiáveis e eficientes. 
+                        Com anos de experiência em cloud computing, containerização e automação, transformo desafios 
+                        complexos em sistemas elegantes.
+                    </p>
+                    
+                    <div class="about-sections">
+                        <div class="about-block">
+                            <h4>🎯 Foco</h4>
+                            <p>Automação de infraestrutura, CI/CD, orquestração de containers, monitoramento e observabilidade</p>
+                        </div>
+                        <div class="about-block">
+                            <h4>💡 Filosofia</h4>
+                            <p>Infraestrutura como código, automatização total, segurança desde o início e sistema orientado para confiabilidade</p>
+                        </div>
+                        <div class="about-block">
+                            <h4>🚀 Objetivo</h4>
+                            <p>Acelerar tempo de entrega, reduzir custo operacional e aumentar a estabilidade dos sistemas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projetos Completados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime Médio</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Satisfação</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+            
+            <div class="contact-container">
+                <form class="contact-form glass-effect" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+
+                <div class="contact-info glass-effect">
+                    <h3>Conecte-se Comigo</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="LinkedIn">in</a>
+                        <a href="#" class="social-icon" title="GitHub">gh</a>
+                    </div>
+                    <p class="contact-direct">luanbispo.sousa263@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Desenvolvido com <span class="heart">❤️</span> por Luan Sousa | DevOps Engineer</p>
+            <p class="footer-date">© 2025. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
