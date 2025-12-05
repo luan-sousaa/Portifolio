@@ -113,32 +113,6 @@ function animateNumber(element) {
     animate();
 }
 
-// ===== FORMULÁRIO DE CONTATO =====
-document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value,
-    };
-
-    console.log('Formulário enviado:', formData);
-
-    const submitBtn = e.target.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = '✓ Enviado com sucesso!';
-    submitBtn.style.background = 'linear-gradient(135deg, #4caf50 0%, #388e3c 100%)';
-
-    setTimeout(() => {
-        e.target.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.style.background = '';
-    }, 3000);
-});
-
 // ===== EFEITO LIQUID BACKGROUND ANIMATION =====
 function animateLiquidBackground() {
     const body = document.querySelector('body');
@@ -195,13 +169,16 @@ const sectionObserver = new IntersectionObserver((entries) => {
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.1, rootMargin: '0px' });
 
 document.querySelectorAll('section').forEach((section) => {
-    section.style.opacity = '0.8';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'all 600ms cubic-bezier(0.34, 1.56, 0.64, 1)';
-    sectionObserver.observe(section);
+    if (!section.hasAttribute('data-animated')) {
+        section.style.opacity = '0.8';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'all 600ms cubic-bezier(0.34, 1.56, 0.64, 1)';
+        section.setAttribute('data-animated', 'true');
+        sectionObserver.observe(section);
+    }
 });
 
 // ===== PERFORMANCE: DEBOUNCE PARA EVENTOS =====
@@ -225,6 +202,9 @@ window.addEventListener('scroll', debouncedScroll);
 
 // ===== INICIALIZAR TOOLTIPS =====
 document.querySelectorAll('[title]').forEach((element) => {
+    // Skip social icons
+    if (element.classList.contains('social-icon')) return;
+
     element.addEventListener('mouseenter', (e) => {
         const tooltip = document.createElement('div');
         tooltip.className = 'tooltip-liquid';
