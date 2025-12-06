@@ -763,7 +763,7 @@ section {
 .project-card {
     position: relative;
     padding: 2.5rem;
-    background-color: color-mix(in srgb, var(--c-glass) 12%, transparent);
+    
     backdrop-filter: blur(var(--blur)) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(var(--blur)) saturate(var(--saturation));
     border: 1px solid color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 10%), transparent);
@@ -790,16 +790,12 @@ section {
     width: 60%;
     height: auto;
     margin: 1rem auto 1.5rem;
-    padding: 0.75rem;
     overflow: hidden;
     border-radius: 16px;
-    background: color-mix(in srgb, var(--c-glass) 30%, transparent);
-    border: 2px solid color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 15%), transparent);
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 16/9;
-    box-shadow: inset 0 1px 3px color-mix(in srgb, var(--c-light) 20%, transparent);
 }
 
 .project-img {
@@ -808,47 +804,6 @@ section {
     object-fit: contain;
     object-position: center;
     border-radius: 10px;
-    border: 1.5px solid color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 10%), transparent);
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    inset: 1px;
-    background: linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--c-light) 30%, transparent) 0%,
-        transparent 50%,
-        color-mix(in srgb, var(--c-dark) 10%, transparent) 100%
-    );
-    border-radius: 28px;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 400ms var(--ease-smooth);
-}
-
-.project-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(94, 179, 255, 0.15) 0%, transparent 60%);
-    opacity: 0;
-    transition: opacity 500ms ease;
-}
-
-.project-card:hover {
-    background-color: color-mix(in srgb, var(--c-glass) 18%, transparent);
-    box-shadow:
-        inset 0 0 0 1px color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 15%), transparent),
-        inset 1.8px 3px 0px -2px color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 95%), transparent),
-        inset 1.2px 2px 1px -1px color-mix(in srgb, var(--c-light) calc(var(--glass-reflex) * 80%), transparent),
-        inset 0 -1px 1px 0 color-mix(in srgb, var(--c-dark) 35%, transparent),
-        inset 0 -2px 4px -1px color-mix(in srgb, var(--c-dark) 25%, transparent),
-        0 0 0 1px color-mix(in srgb, var(--c-light) 8%, transparent),
-        0 4px 12px 0 color-mix(in srgb, var(--c-dark) 20%, transparent),
-        0 12px 28px -4px color-mix(in srgb, var(--c-dark) 28%, transparent),
-        0 20px 50px -8px color-mix(in srgb, var(--c-dark) 30%, transparent),
-        0 0 80px -20px color-mix(in srgb, var(--c-action) 20%, transparent);
 }
 
 .project-header {
@@ -866,7 +821,6 @@ section {
 
 .project-body {
     flex: 1;
-    margin-bottom: 1.5rem;
     position: relative;
     z-index: 2;
 }
@@ -883,20 +837,6 @@ section {
 .project-solution strong {
     color: var(--apple-blue-light);
     font-weight: 600;
-}
-
-.project-diagram {
-    margin: 1.5rem 0;
-    padding: 1.2rem;
-    background: rgba(30, 112, 193, 0.08);
-    border: 1px solid rgba(94, 179, 255, 0.15);
-    border-radius: 16px;
-}
-
-.diagram-svg {
-    width: 100%;
-    height: auto;
-    color: var(--apple-blue-light);
 }
 
 .project-tags {
