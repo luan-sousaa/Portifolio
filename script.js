@@ -287,3 +287,52 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// ===== WEB3FORMS CONTACT HANDLER =====
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+
+        // Disable button and show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+        formStatus.textContent = '';
+        formStatus.style.color = '';
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                formStatus.textContent = '✓ Mensagem enviada com sucesso!';
+                formStatus.style.color = '#4caf50';
+                contactForm.reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    formStatus.textContent = '';
+                }, 3000);
+            } else {
+                throw new Error(data.message || 'Erro ao enviar mensagem');
+            }
+        } catch (error) {
+            formStatus.textContent = '✗ Erro ao enviar. Tente novamente.';
+            formStatus.style.color = '#f44336';
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            console.error('Form submission error:', error);
+        }
+    });
+}

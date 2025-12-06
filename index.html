@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de DevOps">
     <meta name="theme-color" content="#1e70c1">
-    <title>Portfólio Profissional</title>
+    <title>Import_Code Luan </title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -269,7 +277,11 @@
             <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
             
             <div class="contact-container">
-                <form class="contact-form glass-effect" id="contactForm">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form glass-effect" id="contactForm">
+                    <input type="hidden" name="access_key" value="e7400246-ef6f-46e7-9024-a8e9df01195f">
+                    <input type="hidden" name="subject" value="Nova mensagem do portfólio">
+                    <input type="hidden" name="redirect" value="false">
+                    
                     <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" required>
@@ -279,32 +291,40 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject_custom">Assunto</label>
+                        <input type="text" id="subject_custom" name="assunto" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensagem</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <div id="form-status" style="margin-top: 1rem; text-align: center; font-weight: 600;"></div>
                 </form>
 
                 <div class="contact-info glass-effect">
                     <h3>Conecte-se Comigo</h3>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/luan-sousa-a29085265/" class="social-icon">LinkedIn</a>
-                        <a href="https://github.com/luan-sousaa" class="social-icon">GitHub</a>
+                        <a href="https://www.linkedin.com/in/luan-sousa-a29085265/" class="social-icon" aria-label="LinkedIn">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" alt="LinkedIn" class="social-logo">
+                        </a>
+                        <a href="https://github.com/luan-sousaa" class="social-icon" aria-label="GitHub">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub" class="social-logo">
+                        </a>
+                        <a href="https://www.instagram.com/__import.code/" class="social-icon" aria-label="Instagram">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/instagram.svg" alt="Instagram" class="social-logo">
+                        </a>
                     </div>
                     <p class="contact-direct">luanbispo.sousa263@gmail.com</p>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">Desenvolvido com <span class="heart">❤️</span> por Luan Sousa | DevOps Engineer</p>
+            <p class="footer-text">Desenvolvido com <span class="heart">❤️</span> por Luan Sousa</p>
             <p class="footer-date">© 2025. Todos os direitos reservados.</p>
         </div>
     </footer>
