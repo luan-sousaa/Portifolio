@@ -725,12 +725,23 @@ section {
 }
 
 .tech-icon {
-    font-size: 3.5rem;
     margin-bottom: 1rem;
-    display: block;
-    filter: drop-shadow(0 2px 8px rgba(94, 179, 255, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
+}
+
+.tech-logo {
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(53%) saturate(4091%) hue-rotate(186deg) brightness(101%) contrast(95%);
+    transition: transform 300ms var(--ease-smooth);
+}
+
+.tech-card:hover .tech-logo {
+    transform: scale(1.1);
 }
 
 .tech-card h3 {
