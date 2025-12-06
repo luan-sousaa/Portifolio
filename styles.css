@@ -766,9 +766,11 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -828,6 +830,9 @@ section {
     color: var(--apple-blue-light);
     font-weight: 700;
     letter-spacing: -0.3px;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .project-body {
@@ -842,6 +847,7 @@ section {
     font-size: 0.95rem;
     line-height: 1.7;
     color: var(--text-secondary);
+    min-height: 3.5rem;
 }
 
 .project-problem strong,
@@ -855,6 +861,7 @@ section {
     flex-wrap: wrap;
     gap: 0.75rem;
     position: relative;
+    margin-top: 1.5rem;
     z-index: 2;
 }
 
